@@ -5,7 +5,7 @@ const express = require('express');
 
 // Cấu hình bot với Webhook
 const token = process.env.TELEGRAM_TOKEN || '7751217253:AAHYIOAF0HMufS9sm5soBgjOjdIy1XwyILg';
-const webhookUrl = process.env.WEBHOOK_URL || 'https://your-render-app.onrender.com';
+const webhookUrl = process.env.WEBHOOK_URL || 'https://bot-md5-phantich.onrender.com';
 const bot = new TelegramBot(token, { polling: false });
 bot.setWebHook(`${webhookUrl}/bot${token}`);
 
