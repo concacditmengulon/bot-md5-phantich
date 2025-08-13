@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "preinstall": "node -e 'process.exit(0)' || npm install --build-from-source",
     "start": "node index.js"
   },
   "dependencies": {
     "brain.js": "^2.0.0-beta.2",
     "express": "^4.18.2",
     "md5": "^2.3.0",
-    "node-telegram-bot-api": "^0.66.0"
+    "node-telegram-bot-api": "^0.66.0",
+    "prebuild-install": "^7.1.1"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=16.0.0 <18.0.0"
   }
 }
